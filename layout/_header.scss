@@ -4,7 +4,7 @@ body{
     font-size: 1.8rem;
     line-height: 1.7rem;
     color:$color-grey-dark;
-    padding: 3rem;
+   
     box-sizing: border-box;
 }
 .header{
@@ -12,8 +12,11 @@ body{
     height: 95vh;;
     background-position: top;
     background-size: cover;
-    clip-path: polygon(0% 0%,100% 0%,100% 75vh,0% 100%);
+    clip-path: polygon(0% 0%,100% 0%,100% 75vh,0% 97%);
     position: relative;
+    @include respond(phone){
+        clip-path: polygon(0% 0%,100% 0%,100% 80vh,0% 97%);
+    }
 }
 .logo-box{
     position:absolute;
